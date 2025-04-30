@@ -1324,6 +1324,7 @@ struct EditorContext
     ContextMenuAction& GetContextMenu() { return m_ContextMenuAction; }
     ShortcutAction& GetShortcut() { return m_ShortcutAction; }
 
+    const ImGuiEx::Canvas& GetCanvas() const { return m_Canvas; }
     const ImGuiEx::CanvasView& GetView() const { return m_Canvas.View(); }
     const ImRect& GetViewRect() const { return m_Canvas.ViewRect(); }
     const ImRect& GetRect() const { return m_Canvas.Rect(); }
